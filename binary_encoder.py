@@ -1,3 +1,5 @@
+from time import sleep
+
 ASCII_Binary = {
     #space and symbols
     " ":"00100000",
@@ -101,6 +103,8 @@ ASCII_letters = []
 while True:
     entry = input("Convert to Binary (only ASCII): ")
     if entry.lower() == "exit":
+        print("See you next time..")
+        sleep(1.5)
         break
     binary_result = []
     for char in entry:
